@@ -1,0 +1,58 @@
+.navbar {
+  height: 65px;
+
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+
+  z-index: 100;
+}
+
+.navbar-left h2 {
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-avatar {
+  width: 35px;
+  height: 35px;
+
+  background: var(--primary-yellow);
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.dropdown-icon {
+  font-size: 10px;
+  color: var(--text-secondary);
+}

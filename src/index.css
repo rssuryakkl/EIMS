@@ -1,0 +1,42 @@
+:root {
+  --primary-yellow: #f5c400;
+  --dark-yellow: #dfaf00;
+  --light-yellow: #fff8d6;
+
+  --white: #ffffff;
+
+  --text-primary: #222222;
+  --text-secondary: #666666;
+
+  --background: #fafafa;
+  --border: #e5e5e5;
+
+  --success: #2e7d32;
+  --danger: #d32f2f;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  background: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}

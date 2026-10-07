@@ -1,0 +1,13 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.dashboard-main {
+  margin-left: 240px;
+}
+
+.dashboard-content {
+  padding-top: 65px;
+  min-height: 100vh;
+}

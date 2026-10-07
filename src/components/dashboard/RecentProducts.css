@@ -1,0 +1,51 @@
+.dashboard-section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+}
+
+.section-header button {
+  background: transparent;
+  border: none;
+  color: var(--dark-yellow);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product-table {
+  width: 100%;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-header {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-row {
+  font-size: 14px;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
