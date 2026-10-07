@@ -1,9 +1,21 @@
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
+import logo from "../../assets/images/LCC.jpeg";
 
 function Sidebar() {
   return (
     <aside className="sidebar">
+
+      <div className="sidebar-logo">
+        <img src={logo} alt="LCC Logo" />
+
+        <div className="sidebar-logo-name">
+          <span>SCH</span>
+          <strong>WAREHOUSE</strong>
+        </div>
+      </div>
+
+      {/* Sidebar Menu */}
       <div className="sidebar-menu">
 
         <NavLink
@@ -12,7 +24,7 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>🟡</span>
+          <span className="menu-icon">🟡</span>
           <span>Dashboard</span>
         </NavLink>
 
@@ -22,7 +34,7 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>📦</span>
+          <span className="menu-icon">📦</span>
           <span>Products</span>
         </NavLink>
 
@@ -32,7 +44,7 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>📊</span>
+          <span className="menu-icon">📊</span>
           <span>Inventory</span>
         </NavLink>
 
@@ -42,7 +54,7 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>👥</span>
+          <span className="menu-icon">👥</span>
           <span>Users</span>
         </NavLink>
 
@@ -52,7 +64,7 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>📈</span>
+          <span className="menu-icon">📈</span>
           <span>Reports</span>
         </NavLink>
 
@@ -62,18 +74,20 @@ function Sidebar() {
             isActive ? "sidebar-link active" : "sidebar-link"
           }
         >
-          <span>⚙️</span>
+          <span className="menu-icon">⚙️</span>
           <span>Settings</span>
         </NavLink>
 
       </div>
 
+      {/* Logout */}
       <div className="sidebar-bottom">
         <button className="logout-btn">
-          <span>🚪</span>
+          <span className="menu-icon">🚪</span>
           <span>Logout</span>
         </button>
       </div>
+
     </aside>
   );
 }
